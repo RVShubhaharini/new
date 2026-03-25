@@ -1,0 +1,42 @@
+# Environment variables (CRITICAL: Never commit this file!)
+.env
+
+# Virtual Environment
+venv/
+env/
+.venv/
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Generated Logs and Audit Histories
+# (You don't want to push live dynamic logs to GitHub)
+audit_log.txt
+unlearning_log.csv
+deletion_history.json
+
+# Vector Database (FAISS Memory)
+faiss_index.bin
+faiss_memory.pkl
+
+# Dynamically Generated Dashboard Artifacts
+dashboard/confidence_plot.png
+dashboard/mia_plot.png
+dashboard/shap_latest.png
+dashboard/latest_metrics.json
+dashboard/test_metrics.json
+dashboard/unlearning_certificate.pdf
+
+# Models (Optional based on your preference)
+# If your baseline models are small (under 100MB), you can safely commit them so the server has a starting point.
+# However, you should generally ignore the 'current' models since they change every time someone is unlearned.
+models/*_current.pth
+models/*_current.pkl
+models/*_unlearned.pth
+
+# OS generated files
+.DS_Store
+Thumbs.db
