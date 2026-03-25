@@ -13,7 +13,6 @@ __pycache__/
 *.pyd
 
 # Generated Logs and Audit Histories
-# (You don't want to push live dynamic logs to GitHub)
 audit_log.txt
 unlearning_log.csv
 deletion_history.json
@@ -22,17 +21,20 @@ deletion_history.json
 faiss_index.bin
 faiss_memory.pkl
 
-# Dynamically Generated Dashboard Artifacts
-dashboard/confidence_plot.png
-dashboard/mia_plot.png
-dashboard/shap_latest.png
-dashboard/latest_metrics.json
-dashboard/test_metrics.json
-dashboard/unlearning_certificate.pdf
+# --- FILES TO IGNORE (Streamlit & Testing UI) ---
+# You requested to only deploy the Telegram Bot, so we explicitly ignore these:
+dashboard/app.py
+dashboard/pages/
+main.py
+tests/
+test_*.py
 
-# Models (Optional based on your preference)
-# If your baseline models are small (under 100MB), you can safely commit them so the server has a starting point.
-# However, you should generally ignore the 'current' models since they change every time someone is unlearned.
+# Dynamically Generated Dashboard Artifacts
+dashboard/*.png
+dashboard/*.json
+dashboard/*.pdf
+
+# Current Models (We only want to push the baseline to GitHub, ignore current)
 models/*_current.pth
 models/*_current.pkl
 models/*_unlearned.pth
