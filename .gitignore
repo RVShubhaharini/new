@@ -21,13 +21,7 @@ deletion_history.json
 faiss_index.bin
 faiss_memory.pkl
 
-# --- FILES TO IGNORE (Streamlit & Testing UI) ---
-# You requested to only deploy the Telegram Bot, so we explicitly ignore these:
-dashboard/app.py
-dashboard/pages/
-main.py
-tests/
-test_*.py
+
 
 # Dynamically Generated Dashboard Artifacts
 dashboard/*.png
