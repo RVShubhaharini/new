@@ -27,7 +27,7 @@ def send_notification(email_address, message):
         msg['Subject'] = "Bank Security Notification"
         msg.attach(MIMEText(message, 'plain'))
 
-        with smtplib.SMTP(EMAIL_SMTP_SERVER, EMAIL_SMTP_PORT) as server:
+        with smtplib.SMTP(EMAIL_SMTP_SERVER, EMAIL_SMTP_PORT, timeout=10) as server:
             server.starttls(context=context)
             server.login(EMAIL_SENDER_USER, EMAIL_SENDER_PASSWORD)
             server.sendmail(EMAIL_SENDER_USER, email_address, msg.as_string())
