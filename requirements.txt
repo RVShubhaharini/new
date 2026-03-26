@@ -53,7 +53,8 @@ tqdm
 # ===============================
 requests
 twilio
-
+fastapi
+uvicorn
 # ===============================
 # OPTIONAL (recommended for stability)
 # ===============================
