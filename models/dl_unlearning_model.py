@@ -38,7 +38,7 @@ class BankNet(nn.Module):
 # TRAIN BASELINE MODEL
 # ============================================================
 
-def train_dl(data_path="data/bank.csv"):
+def train_dl(data_path="data/bank.csv", fit_model=True):
 
     df = pd.read_csv(data_path)
 
@@ -80,16 +80,18 @@ def train_dl(data_path="data/bank.csv"):
     test_loader  = DataLoader(TensorDataset(X_test_ts, y_test_ts), batch_size=64)
 
     model = BankNet(X_train_ts.shape[1]).to(device)
-    criterion = nn.CrossEntropyLoss()
-    optimizer = optim.Adam(model.parameters(), lr=0.001)
+    
+    if fit_model:
+        criterion = nn.CrossEntropyLoss()
+        optimizer = optim.Adam(model.parameters(), lr=0.001)
 
-    for _ in range(15):
-        for x, y in train_loader:
-            optimizer.zero_grad()
-            loss = criterion(model(x.to(device)), y.to(device))
-            loss.backward()
-            optimizer.step()
+        for _ in range(15):
+            for x, y in train_loader:
+                optimizer.zero_grad()
+                loss = criterion(model(x.to(device)), y.to(device))
+                loss.backward()
+                optimizer.step()
 
-    torch.save(model.state_dict(), "models/dl_model_baseline.pth")
+        torch.save(model.state_dict(), "models/dl_model_baseline.pth")
 
     return model, train_df, test_loader, process, encoder, scaler, num_cols, cat_cols, len(df)

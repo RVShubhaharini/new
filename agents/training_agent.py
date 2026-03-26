@@ -51,7 +51,7 @@ def get_cumulative_deleted_count():
     h = load_deletion_history()
     return len(h.get('dl', []))
 
-def train_sisa(data_path="data/bank.csv"):
+def train_sisa(data_path="data/bank.csv", fit_model=True):
 
     df = pd.read_csv(data_path)
     df = df.sample(frac=1, random_state=RANDOM_STATE).reset_index(drop=True)
@@ -82,9 +82,10 @@ def train_sisa(data_path="data/bank.csv"):
     X_test  = X[test_idx]
 
     sisa = OptimizedSISA(NUM_SHARDS, NUM_SLICES)
-    sisa.fit(X_train, y_train)
-
-    joblib.dump(sisa, "models/sisa_model_baseline.pkl")
+    
+    if fit_model:
+        sisa.fit(X_train, y_train)
+        joblib.dump(sisa, "models/sisa_model_baseline.pkl")
 
     # Return total_deleted so we can report it
     return sisa, X_train, y_train, X_test, y_test, len(df)
@@ -95,36 +96,41 @@ def load_or_train_models():
     # Path constants
     SISA_CURRENT = "models/sisa_model_current.pkl"
     DL_CURRENT = "models/dl_model_current.pth"
+    SISA_BASELINE = "models/sisa_model_baseline.pkl"
+    DL_BASELINE = "models/dl_model_baseline.pth"
     
     # SISA
     if os.path.exists(SISA_CURRENT):
         print(f"Loading existing SISA model from {SISA_CURRENT}...")
+        _, X_train_sisa, y_train_sisa, X_test_sisa, y_test_sisa, total_sisa = train_sisa(fit_model=False)
         sisa_model = joblib.load(SISA_CURRENT)
-        # We still need the data to return consistent state
-        # We assume dataset on disk hasn't changed structure since model train
-        # For simplicity, we re-run data prep part of train_sisa but don't fit
-        _, X_train_sisa, y_train_sisa, X_test_sisa, y_test_sisa, total_sisa = train_sisa() # This re-trains... inefficient?
-        # Actually train_sisa fits. We should separate data loading.
-        # For this MVP, let's just use train_sisa but overwrite the model with loaded one
-        # This ensures X_train/y_train are available and matching the random seed
-        sisa_model = joblib.load(SISA_CURRENT) # Reload to be sure
     else:
-        print("No SISA model found. Training Baseline...")
-        sisa_model, X_train_sisa, y_train_sisa, X_test_sisa, y_test_sisa, total_sisa = train_sisa()
+        print("Loading Baseline SISA model explicitly to save RAM...")
+        _, X_train_sisa, y_train_sisa, X_test_sisa, y_test_sisa, total_sisa = train_sisa(fit_model=False)
+        if os.path.exists(SISA_BASELINE):
+            sisa_model = joblib.load(SISA_BASELINE)
+        else:
+            print("Baseline not found. Forcing full cloud training (MAY CRASH OOM)...")
+            sisa_model, *_ = train_sisa(fit_model=True)
         joblib.dump(sisa_model, SISA_CURRENT)
         
     # DL
     if os.path.exists(DL_CURRENT):
         print(f"Loading existing DL model from {DL_CURRENT}...")
-        # We need to reconstruct the model arch and data loaders
-        _, train_df_dl, test_loader_dl, process_dl, encoder_dl, scaler_dl, num_cols_dl, cat_cols_dl, total_dl = train_dl()
-        # Create empty model structure
+        _, train_df_dl, test_loader_dl, process_dl, encoder_dl, scaler_dl, num_cols_dl, cat_cols_dl, total_dl = train_dl(fit_model=False)
         input_dim = len(num_cols_dl) + encoder_dl.transform(train_df_dl[cat_cols_dl]).shape[1]
         dl_model = BankNet(input_dim)
         dl_model.load_state_dict(torch.load(DL_CURRENT))
     else:
-        print("No DL model found. Training Baseline...")
-        dl_model, train_df_dl, test_loader_dl, process_dl, encoder_dl, scaler_dl, num_cols_dl, cat_cols_dl, total_dl = train_dl()
+        print("Loading Baseline DL model explicitly to save RAM...")
+        _, train_df_dl, test_loader_dl, process_dl, encoder_dl, scaler_dl, num_cols_dl, cat_cols_dl, total_dl = train_dl(fit_model=False)
+        input_dim = len(num_cols_dl) + encoder_dl.transform(train_df_dl[cat_cols_dl]).shape[1]
+        dl_model = BankNet(input_dim)
+        if os.path.exists(DL_BASELINE):
+            dl_model.load_state_dict(torch.load(DL_BASELINE))
+        else:
+            print("Baseline not found. Forcing full cloud training (MAY CRASH OOM)...")
+            dl_model, *_ = train_dl(fit_model=True)
         torch.save(dl_model.state_dict(), DL_CURRENT)
     
     print("Models Ready (Stateful).")
