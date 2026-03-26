@@ -6,10 +6,6 @@ from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes
 
-import threading
-from fastapi import FastAPI
-import uvicorn
-
 # Load the main pipeline
 from orchestrator.langgraph_flow import graph
 
@@ -133,23 +129,5 @@ def main() -> None:
     # since signals can only be caught in the main thread!
     application.run_polling(allowed_updates=Update.ALL_TYPES, stop_signals=None)
 
-app = FastAPI()
-
-@app.get("/")
-def home():
-    return {"status": "Bot running"}
-
-def run_bot():
-    # Python-Telegram-Bot v20 requires an asyncio event loop
-    # Threads don't have one by default, so we create & set it here.
-    new_loop = asyncio.new_event_loop()
-    asyncio.set_event_loop(new_loop)
-    main()
-
-# Start bot in background thread
-threading.Thread(target=run_bot, daemon=True).start()
-
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 8000))
-    print(f"🚀 Starting FastAPI server on port {port}...")
-    uvicorn.run(app, host="0.0.0.0", port=port)
+    main()
