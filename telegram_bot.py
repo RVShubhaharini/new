@@ -77,7 +77,16 @@ async def delete_record(update: Update, context: ContextTypes.DEFAULT_TYPE) -> N
                 "force_ml": force_ml
             })
             
-        result = await loop.run_in_executor(None, run_graph_sync)
+        # Add a timeout to prevent the thread from hanging indefinitely if Render kills it
+        task = loop.run_in_executor(None, run_graph_sync)
+        
+        # We wait up to 300 seconds (5 mins) for the pipeline to finish 
+        # (Render free tier kills idle/heavy loops aggressively)
+        try:
+            result = await asyncio.wait_for(task, timeout=300.0)
+        except asyncio.TimeoutError:
+            await status_msg.edit_text("⚠️ <b>Timeout Error:</b> The server took too long to process this request. The pipeline may have run out of memory or crashed on the cloud server.", parse_mode='HTML')
+            return
         
         # 5. Format the Result
         final_status = result.get('status_message', 'Completed')
@@ -105,7 +114,7 @@ async def delete_record(update: Update, context: ContextTypes.DEFAULT_TYPE) -> N
         await status_msg.edit_text(reply_msg, parse_mode='HTML')
         
     except Exception as e:
-        error_msg = f"‼️ <b>Error during unlearning:</b>\n<code>{str(e)}</code>"
+        error_msg = f"‼️ <b>System Error during unlearning:</b>\n<code>{str(e)}</code>\n\n<i>Note: If running on a free cloud tier, this usually means the server ran out of memory while loading the models.</i>"
         await status_msg.edit_text(error_msg, parse_mode='HTML')
         print(f"Pipeline Error: {e}")
 
