@@ -124,8 +124,15 @@ def main() -> None:
         print("ERROR: TELEGRAM_BOT_TOKEN is not set in your .env file!")
         return
         
-    # Create the Application and pass it your bot's token.
-    application = Application.builder().token(TELEGRAM_BOT_TOKEN).build()
+    # Create the Application and pass it your bot's token with higher timeouts for Render.
+    application = (
+        Application.builder()
+        .token(TELEGRAM_BOT_TOKEN)
+        .connect_timeout(30.0)
+        .read_timeout(30.0)
+        .write_timeout(30.0)
+        .build()
+    )
 
     # Commands
     application.add_handler(CommandHandler("start", start))
