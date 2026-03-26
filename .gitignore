@@ -12,14 +12,7 @@ __pycache__/
 *.pyo
 *.pyd
 
-# Generated Logs and Audit Histories
-audit_log.txt
-unlearning_log.csv
-deletion_history.json
 
-# Vector Database (FAISS Memory)
-faiss_index.bin
-faiss_memory.pkl
 
 
 
@@ -28,10 +21,6 @@ dashboard/*.png
 dashboard/*.json
 dashboard/*.pdf
 
-# Current Models (We only want to push the baseline to GitHub, ignore current)
-models/*_current.pth
-models/*_current.pkl
-models/*_unlearned.pth
 
 # OS generated files
 .DS_Store

@@ -1,0 +1,355 @@
+Training completed
+Strategy selected: DL
+Unlearning completed
+Validation Accuracy: 0.8557993730407524
+Compliance Status: True
+[2026-02-14 15:53:07.605939] Training completed
+[2026-02-14 15:53:07.610162] Strategy selected: DL
+[2026-02-14 15:53:09.138603] Unlearning completed. Removed 43 records.
+[2026-02-14 15:53:09.232560] Validation Accuracy: 0.8557993730407524
+[2026-02-14 15:53:09.235151] Compliance Status: True
+[2026-02-14 15:55:17.319668] Training completed
+[2026-02-14 15:55:17.324246] Strategy selected: DL
+[2026-02-14 15:55:18.741299] Unlearning completed. Removed 37 records.
+[2026-02-14 15:55:18.838297] Validation Accuracy: 0.8557993730407524
+[2026-02-14 15:55:18.841156] Compliance Status: True
+[2026-02-14 15:59:36.648348] Training completed
+[2026-02-14 15:59:36.652348] Strategy selected: DL
+[2026-02-14 15:59:38.150048] Unlearning completed. Removed 11 records.
+[2026-02-14 15:59:38.247073] Validation Accuracy: 0.8557993730407524
+[2026-02-14 15:59:38.251074] Compliance Status: True
+[2026-02-14 16:12:44.313873] Training completed
+[2026-02-14 16:12:44.317442] Strategy selected: DL
+[2026-02-14 16:12:45.966008] Unlearning completed. Removed 10 records (Indices: [131, 7084, 4718, 1544, 2847]...)
+[2026-02-14 16:12:46.064699] Validation Accuracy: 0.8557993730407524
+[2026-02-14 16:12:46.067638] Compliance Status: True
+[2026-02-14 16:13:20.773499] Training completed
+[2026-02-14 16:13:20.776039] Strategy selected: DL
+[2026-02-14 16:13:22.553319] Unlearning completed. Removed 10 records (Indices: [2750, 5016, 3072, 5868, 3738]...)
+[2026-02-14 16:13:22.666494] Validation Accuracy: 0.8557993730407524
+[2026-02-14 16:13:22.670686] Compliance Status: True
+[2026-02-14 16:25:27.808120] Training completed
+[2026-02-14 16:25:27.810895] Strategy selected: DL
+[2026-02-14 16:25:29.260854] Unlearning completed. Removed 5 records (Indices: [6735, 3364, 3910, 4716, 226]...)
+[2026-02-14 16:25:29.344426] Validation Accuracy: 0.8566950291088222
+[2026-02-14 16:25:29.347666] Compliance Status: True
+[2026-02-14 19:56:18.280177] Training completed
+[2026-02-14 19:56:18.304527] Strategy selected: DL
+[2026-02-14 19:56:20.499381] Unlearning completed. Removed 1 records.
+[2026-02-14 19:56:20.705633] Validation Accuracy: 0.8562472010747872
+[2026-02-14 19:56:20.708759] Compliance Status: True
+[2026-02-14 19:59:48.025947] Training completed
+[2026-02-14 19:59:48.029958] Strategy selected: DL
+[2026-02-14 19:59:48.042439] No records unlearned (already deleted or empty).
+[2026-02-14 19:59:48.048048] Validation skipped (no change).
+[2026-02-14 19:59:48.050911] Compliance Status: True
+[2026-02-14 21:03:40.977903] Training completed
+[2026-02-14 21:03:40.999377] Strategy selected: DL
+[2026-02-14 21:03:41.009378] No records unlearned (already deleted or empty).
+[2026-02-14 21:03:41.011373] Validation skipped (no change).
+[2026-02-14 21:03:41.016298] Compliance Status: True
+[2026-02-14 21:03:47.680555] Notification: Email Sent Successfully
+[2026-02-14 21:16:20.579739] Training completed
+[2026-02-14 21:16:20.583741] Strategy selected: DL
+[2026-02-14 21:16:20.592739] No records unlearned (already deleted or empty).
+[2026-02-14 21:16:20.596740] Validation skipped (no change).
+[2026-02-14 21:22:55.134554] Training completed
+[2026-02-14 21:22:55.139554] Strategy selected: DL
+[2026-02-14 21:22:55.245903] No records unlearned (already deleted or empty). Loaded existing model.
+[2026-02-14 21:22:55.477530] Validation Accuracy: 0.8562472010747872
+[2026-02-14 21:23:11.277878] Compliance Status: True
+[2026-02-14 21:46:48.217778] Training completed
+[2026-02-14 21:46:48.239429] Strategy selected: DL
+[2026-02-14 21:46:48.323515] No records unlearned (already deleted or empty). Loaded existing model.
+[2026-02-14 21:46:48.526118] Validation Accuracy: 0.8562472010747872
+[2026-02-14 21:47:06.795591] Compliance Status: True
+[2026-02-14 21:50:08.811353] Training completed
+[2026-02-14 21:50:08.817836] Strategy selected: DL
+[2026-02-14 21:50:08.956571] No records unlearned (already deleted or empty). Loaded existing model.
+[2026-02-14 21:50:09.326780] Validation Accuracy: 0.8562472010747872
+[2026-02-14 21:50:13.476666] Compliance Status: True
+[2026-02-14 21:55:19.375843] Training completed
+[2026-02-14 21:55:19.382846] Strategy selected: DL
+[2026-02-14 21:55:19.473911] No records unlearned (already deleted or empty). Loaded existing model.
+[2026-02-14 21:55:19.568481] Validation Accuracy: 0.8562472010747872
+[2026-02-14 21:55:22.079231] Compliance Status: True
+[2026-02-15 14:12:16.827038] Training completed
+[2026-02-15 14:12:16.832040] Strategy selected: DL
+[2026-02-15 14:12:16.941851] No records unlearned (already deleted or empty). Loaded existing model.
+[2026-02-15 14:12:17.180527] Validation Accuracy: 0.8562472010747872
+[2026-02-15 14:12:24.303683] Compliance Status: True
+[2026-02-15 14:16:21.122091] Training completed
+[2026-02-15 14:16:21.127077] Strategy selected: DL
+[2026-02-15 14:16:21.266787] No records unlearned (already deleted or empty). Loaded existing model.
+[2026-02-15 14:16:21.376358] Validation Accuracy: 0.8562472010747872
+[2026-02-15 14:16:23.708605] Compliance Status: True
+[2026-02-15 14:25:24.171139] Training completed
+[2026-02-15 14:25:24.175981] Strategy selected: DL
+[2026-02-15 14:25:24.279292] No records unlearned (already deleted or empty). Loaded existing model.
+[2026-02-15 14:25:24.408702] Validation Accuracy: 0.8562472010747872
+[2026-02-15 14:25:27.001965] Compliance Status: True
+[2026-02-15 14:28:23.796399] Training completed
+[2026-02-15 14:28:23.800608] Strategy selected: DL
+[2026-02-15 14:28:23.894327] No records unlearned (already deleted or empty). Loaded existing model.
+[2026-02-15 14:28:24.016240] Validation Accuracy: 0.8562472010747872
+[2026-02-15 14:28:28.026021] Compliance Status: True
+[2026-02-15 14:33:11.552271] Training completed
+[2026-02-15 14:33:11.557270] Strategy selected: DL
+[2026-02-15 14:33:11.651604] No records unlearned (already deleted or empty). Loaded existing model.
+[2026-02-15 14:33:11.762246] Validation Accuracy: 0.8562472010747872
+[2026-02-15 14:33:15.094603] Compliance Status: True
+[2026-02-15 14:33:53.260679] Training completed
+[2026-02-15 14:33:53.264462] Strategy selected: DL
+[2026-02-15 14:33:55.149129] Unlearning completed. Removed 50 records.
+[2026-02-15 14:33:55.253144] Validation Accuracy: 0.8557993730407524
+[2026-02-15 14:33:55.425372] Compliance Status: True
+[2026-02-15 14:35:50.098954] Training completed
+[2026-02-15 14:35:50.102168] Strategy selected: DL
+[2026-02-15 14:35:51.649502] Unlearning completed. Removed 50 records.
+[2026-02-15 14:35:51.760419] Validation Accuracy: 0.8553515450067174
+[2026-02-15 14:35:51.929701] Compliance Status: True
+[2026-02-15 14:36:55.274502] Training completed
+[2026-02-15 14:36:55.278493] Strategy selected: DL
+[2026-02-15 14:36:56.883936] Unlearning completed. Removed 50 records.
+[2026-02-15 14:36:56.980469] Validation Accuracy: 0.8544558889386475
+[2026-02-15 14:36:57.159353] Compliance Status: True
+[2026-02-15 14:43:18.742388] Training completed
+[2026-02-15 14:43:18.749389] Strategy selected: DL
+[2026-02-15 14:43:18.868748] No records unlearned (already deleted or empty). Loaded existing model.
+[2026-02-15 14:43:18.989071] Validation Accuracy: 0.8544558889386475
+[2026-02-15 14:43:20.056588] Compliance Status: True
+[2026-02-15 14:44:04.818373] Training completed
+[2026-02-15 14:44:04.823364] Strategy selected: DL
+[2026-02-15 14:44:04.929254] No records unlearned (already deleted or empty). Loaded existing model.
+[2026-02-15 14:44:05.036115] Validation Accuracy: 0.8544558889386475
+[2026-02-15 14:44:05.229466] Compliance Status: True
+[2026-02-15 14:44:51.824815] Training completed
+[2026-02-15 14:44:51.828164] Strategy selected: DL
+[2026-02-15 14:44:51.915890] No records unlearned (already deleted or empty). Loaded existing model.
+[2026-02-15 14:44:52.020186] Validation Accuracy: 0.8544558889386475
+[2026-02-15 14:44:52.186939] Compliance Status: True
+[2026-02-15 14:54:04.385232] Training completed
+[2026-02-15 14:54:04.391272] Strategy selected: DL
+[2026-02-15 14:54:04.482125] No records unlearned (already deleted or empty). Loaded existing model.
+[2026-02-15 14:54:04.579208] Validation Accuracy: 0.8544558889386475
+[2026-02-15 14:54:05.617305] Compliance Status: True
+[2026-02-15 14:54:11.899680] Notification: Email Sent Successfully
+[2026-02-15 15:01:44.356215] Training completed
+[2026-02-15 15:01:44.368216] Strategy selected: DL
+[2026-02-15 15:01:44.547999] No records unlearned (already deleted or empty). Loaded existing model.
+[2026-02-15 15:01:44.645151] Validation Accuracy: 0.8544558889386475
+[2026-02-15 15:01:45.672923] Compliance Status: True
+[2026-02-15 15:11:32.205573] Training completed
+[2026-02-15 15:11:32.287466] Strategy selected: DL (Repeat/Specific: True)
+[2026-02-15 15:11:32.425527] No records unlearned (already deleted or empty). Loaded existing model.
+[2026-02-15 15:11:32.516250] Validation Accuracy: 0.8544558889386475
+[2026-02-15 15:11:33.669342] Compliance Status: True
+[2026-02-15 15:11:59.918717] Training completed
+[2026-02-15 15:11:59.920707] Strategy selected: ML (User Forced)
+[2026-02-15 15:12:00.098772] Unlearning completed. Removed 1 records.
+[2026-02-15 15:12:00.145652] Validation Accuracy: 0.8206047032474804
+[2026-02-15 15:12:00.208495] Compliance Status: True
+[2026-02-15 15:12:43.867039] Training completed
+[2026-02-15 15:12:43.870429] Strategy selected: ML (User Forced)
+[2026-02-15 15:12:44.051495] Unlearning completed. Removed 1 records.
+[2026-02-15 15:12:44.069807] Validation Accuracy: 0.8206047032474804
+[2026-02-15 15:12:44.132550] Compliance Status: True
+[2026-02-15 15:13:50.702012] Training completed
+[2026-02-15 15:13:50.707004] Strategy selected: ML (User Forced)
+[2026-02-15 15:13:50.861571] Unlearning completed. Removed 1 records.
+[2026-02-15 15:13:50.889731] Validation Accuracy: 0.8206047032474804
+[2026-02-15 15:13:50.960138] Compliance Status: True
+[2026-02-15 15:21:16.865229] Training completed
+[2026-02-15 15:21:16.871225] Strategy selected: ML (User Forced)
+[2026-02-15 15:21:17.035485] Unlearning completed. Removed 1 records.
+[2026-02-15 15:21:17.051610] Validation Accuracy: 0.8206047032474804
+[2026-02-15 15:21:17.991664] Compliance Status: True
+[2026-02-15 15:21:57.565392] Training completed
+[2026-02-15 15:21:57.567958] Strategy selected: ML (User Forced)
+[2026-02-15 15:21:57.740640] Unlearning completed. Removed 1 records.
+[2026-02-15 15:21:57.755634] Validation Accuracy: 0.8206047032474804
+[2026-02-15 15:21:57.817227] Compliance Status: True
+[2026-02-15 15:22:24.370631] Training completed
+[2026-02-15 15:22:24.373438] Strategy selected: ML (User Forced)
+[2026-02-15 15:22:24.522736] Unlearning completed. Removed 1 records.
+[2026-02-15 15:22:24.540712] Validation Accuracy: 0.8206047032474804
+[2026-02-15 15:22:24.611093] Compliance Status: True
+[2026-02-15 15:23:26.716641] Training completed
+[2026-02-15 15:23:26.720816] Strategy selected: ML (User Forced)
+[2026-02-15 15:23:26.869316] Unlearning completed. Removed 1 records.
+[2026-02-15 15:23:26.886311] Validation Accuracy: 0.8206047032474804
+[2026-02-15 15:23:27.821057] Compliance Status: True
+[2026-02-15 15:41:00.972413] Training completed
+[2026-02-15 15:41:00.976269] Strategy selected: ML (User Forced)
+[2026-02-15 15:41:01.167205] No records unlearned (already deleted or empty). Loaded existing model.
+[2026-02-15 15:41:01.186910] Validation Accuracy: 0.8206047032474804
+[2026-02-15 15:41:02.156965] Compliance Status: True
+[2026-02-15 16:02:51.713882] Training completed
+[2026-02-15 16:02:51.717539] Strategy selected: ML (User Forced)
+[2026-02-15 16:02:51.917006] No records unlearned (already deleted or empty). Loaded existing model.
+[2026-02-15 16:02:51.935341] Validation Accuracy: 0.8206047032474804
+[2026-02-15 16:02:51.982972] Adversarial Robustness Score: 0.8213
+[2026-02-15 16:02:52.912888] Compliance Status: True
+[2026-02-15 16:03:29.506371] Training completed
+[2026-02-15 16:03:29.509377] Strategy selected: ML (User Forced)
+[2026-02-15 16:03:29.511718] Operation BLOCKED: BLOCKED: Customer 10099 is flagged for AML Investigation. Retention Mandatory.
+[2026-02-15 16:08:58.877312] Training completed
+[2026-02-15 16:08:58.881304] Strategy selected: ML (User Forced)
+[2026-02-15 16:08:58.888718] Operation BLOCKED: BLOCKED: Customer 10099 is flagged for AML Investigation. Retention Mandatory.
+[2026-02-15 16:09:52.965722] Training completed
+[2026-02-15 16:09:53.048738] Strategy selected: DL (Repeat/Specific: True)
+[2026-02-15 16:09:53.054733] Operation BLOCKED: BLOCKED: Customer 10099 is flagged for AML Investigation. Retention Mandatory.
+[2026-02-15 16:14:59.101389] Training completed
+[2026-02-15 16:14:59.187892] Strategy selected: DL (Repeat/Specific: True)
+[2026-02-15 16:14:59.190642] Operation BLOCKED: BLOCKED: Customer 10099 is flagged for AML Investigation. Retention Mandatory.
+[2026-02-15 16:15:30.921306] Training completed
+[2026-02-15 16:15:30.924304] Strategy selected: ML (User Forced)
+[2026-02-15 16:15:30.927304] Operation BLOCKED: BLOCKED: Customer 10099 is flagged for AML Investigation. Retention Mandatory.
+[2026-02-15 16:16:54.039858] Training completed
+[2026-02-15 16:16:54.042865] Strategy selected: ML (User Forced)
+[2026-02-15 16:16:54.209551] No records unlearned (already deleted or empty). Loaded existing model.
+[2026-02-15 16:16:54.224990] Validation Accuracy: 0.8206047032474804
+[2026-02-15 16:16:54.261501] Adversarial Robustness Score: 0.8132
+[2026-02-15 16:16:55.229264] Compliance Status: True
+[2026-02-15 16:43:00.996639] Training completed
+[2026-02-15 16:43:01.069920] Strategy selected: DL (Repeat/Specific: True)
+[2026-02-15 16:43:01.200717] Loaded existing model.
+[2026-02-15 16:43:01.291448] Validation Accuracy: 0.8544558889386475
+[2026-02-15 16:43:01.584529] Fairness Check: could not determine the shape of object type 'DataFrame'
+[2026-02-15 16:43:01.841193] Drift Check: Detected=True, min_p=0.0000
+[2026-02-15 16:43:02.168700] Adversarial Robustness Score: 0.6332
+[2026-02-15 16:43:02.312782] Compliance Status: True
+[2026-02-15 17:17:36.663723] Training completed
+[2026-02-15 17:17:36.761583] Strategy selected: DL (Repeat/Specific: True)
+[2026-02-15 17:17:36.918269] Loaded existing model.
+[2026-02-15 17:17:37.030279] Validation Accuracy: 0.8544558889386475
+[2026-02-15 17:17:37.048940] Fairness Check: could not determine the shape of object type 'DataFrame'
+[2026-02-15 17:17:37.156635] Drift Check: Detected=True, min_p=0.0000
+[2026-02-15 17:17:37.314702] Adversarial Robustness Score: 0.6332
+[2026-02-15 17:17:37.484799] Compliance Status: True
+[2026-02-15 17:19:55.559170] Training completed
+[2026-02-15 17:19:55.640153] Strategy selected: DL (Repeat/Specific: True)
+[2026-02-15 17:19:57.700543] Unlearning completed. Removed 1 records.
+[2026-02-15 17:19:57.801672] Validation Accuracy: 0.8557993730407524
+[2026-02-15 17:19:57.819877] Fairness Check: could not determine the shape of object type 'DataFrame'
+[2026-02-15 17:19:57.924152] Drift Check: Detected=True, min_p=0.0000
+[2026-02-15 17:19:58.096867] Adversarial Robustness Score: 0.6332
+[2026-02-15 17:20:02.616794] Compliance Status: True
+[2026-02-15 17:20:52.773392] Training completed
+[2026-02-15 17:20:52.837901] Strategy selected: DL (Repeat/Specific: True)
+[2026-02-15 17:20:52.941897] Loaded existing model.
+[2026-02-15 17:20:53.063879] Validation Accuracy: 0.8557993730407524
+[2026-02-15 17:20:53.093367] Fairness Check: could not determine the shape of object type 'DataFrame'
+[2026-02-15 17:20:53.207315] Drift Check: Detected=True, min_p=0.0000
+[2026-02-15 17:20:53.394967] Adversarial Robustness Score: 0.6305
+[2026-02-15 17:20:56.138512] Compliance Status: True
+[2026-02-15 17:27:01.955619] Training completed
+[2026-02-15 17:27:02.057101] Strategy selected: DL (Repeat/Specific: True)
+[2026-02-15 17:27:02.190761] Loaded existing model.
+[2026-02-15 17:27:02.286552] Validation Accuracy: 0.8557993730407524
+[2026-02-15 17:27:02.312880] Fairness Check: Approval Rates: Young=0.67, Old=0.51. Ratio=0.76
+[2026-02-15 17:27:02.418478] Drift Check: Detected=True, min_p=0.0000
+[2026-02-15 17:27:02.581171] Adversarial Robustness Score: 0.6305
+[2026-02-15 17:27:02.785277] Compliance Status: True
+[2026-02-15 17:30:32.985191] Training completed
+[2026-02-15 17:30:33.071635] Strategy selected: DL (Repeat/Specific: True)
+[2026-02-15 17:30:33.239112] Loaded existing model.
+[2026-02-15 17:30:33.444109] Validation Accuracy: 0.8557993730407524
+[2026-02-15 17:30:33.467649] Fairness Check: Approval Rates: Young=0.67, Old=0.51. Ratio=0.76
+[2026-02-15 17:30:33.560108] Drift Check: Detected=True, min_p=0.0000
+[2026-02-15 17:30:33.734900] Adversarial Robustness Score: 0.6305
+[2026-02-15 17:30:33.924015] Compliance Status: True
+[2026-02-15 18:11:58.077233] Training completed
+[2026-02-15 18:11:58.175286] Strategy selected: DL (Repeat/Specific: True)
+[2026-02-15 18:11:58.300353] Loaded existing model.
+[2026-02-15 18:11:58.405148] Validation Accuracy: 0.8557993730407524
+[2026-02-15 18:11:58.575346] Adversarial Robustness Score: 0.6305
+[2026-02-15 18:11:58.778561] Compliance Status: True
+[2026-02-15 18:13:02.546144] Training completed
+[2026-02-15 18:13:02.550142] Strategy selected: ML (User Forced)
+[2026-02-15 18:13:02.747367] Loaded existing model.
+[2026-02-15 18:13:02.775524] Validation Accuracy: 0.8206047032474804
+[2026-02-15 18:13:02.824480] Adversarial Robustness Score: 0.8186
+[2026-02-15 18:13:02.908810] Compliance Status: True
+[2026-02-15 18:14:29.408997] Training completed
+[2026-02-15 18:14:29.412894] Strategy selected: ML (User Forced)
+[2026-02-15 18:14:29.585988] Loaded existing model.
+[2026-02-15 18:14:29.605202] Validation Accuracy: 0.8206047032474804
+[2026-02-15 18:14:29.639720] Adversarial Robustness Score: 0.8213
+[2026-02-15 18:14:29.709999] Compliance Status: True
+[2026-02-15 18:14:55.960807] Training completed
+[2026-02-15 18:14:56.034094] Strategy selected: DL (Repeat/Specific: True)
+[2026-02-15 18:14:56.159409] Loaded existing model.
+[2026-02-15 18:14:56.256355] Validation Accuracy: 0.8557993730407524
+[2026-02-15 18:14:56.432087] Adversarial Robustness Score: 0.6305
+[2026-02-15 18:14:56.589703] Compliance Status: True
+[2026-02-15 18:15:44.446668] Training completed
+[2026-02-15 18:15:44.450853] Strategy selected: ML (User Forced)
+[2026-02-15 18:15:44.622330] Loaded existing model.
+[2026-02-15 18:15:44.640913] Validation Accuracy: 0.8206047032474804
+[2026-02-15 18:15:44.673001] Adversarial Robustness Score: 0.8193
+[2026-02-15 18:15:44.741887] Compliance Status: True
+[2026-02-15 18:17:52.351789] Training completed
+[2026-02-15 18:17:52.421545] Strategy selected: DL (Repeat/Specific: True)
+[2026-02-15 18:17:52.523559] Loaded existing model.
+[2026-02-15 18:17:52.612974] Validation Accuracy: 0.8557993730407524
+[2026-02-15 18:17:52.773303] Adversarial Robustness Score: 0.6305
+[2026-02-15 18:17:56.834913] Compliance Status: True
+[2026-02-15 18:18:22.946148] Training completed
+[2026-02-15 18:18:22.949823] Strategy selected: ML (User Forced)
+[2026-02-15 18:18:23.135895] Unlearning completed. Removed 1 records.
+[2026-02-15 18:18:23.152477] Validation Accuracy: 0.8208286674132139
+[2026-02-15 18:18:23.187706] Adversarial Robustness Score: 0.8161
+[2026-02-15 18:18:23.254498] Compliance Status: True
+[2026-02-15 18:18:59.997968] Training completed
+[2026-02-15 18:19:00.003016] Strategy selected: ML (User Forced)
+[2026-02-15 18:19:00.168398] Loaded existing model.
+[2026-02-15 18:19:00.188697] Validation Accuracy: 0.8208286674132139
+[2026-02-15 18:19:00.226233] Adversarial Robustness Score: 0.8155
+[2026-02-15 18:19:00.291825] Compliance Status: True
+[2026-02-15 20:34:59.516234] Learning Strategy: Incremental update for DL
+[2026-02-15 20:35:14.965847] DL Incremental Learning: Added ID 21163 (Fine-tuned 5 epochs)
+[2026-02-15 20:35:14.968733] Learning Result: Successfully learned ID 21163 (Fine-tuned).
+[2026-02-15 20:35:47.920510] Learning Strategy: Incremental update for SISA
+[2026-02-15 20:35:48.402235] SISA Incremental Learning: Added ID 21164
+[2026-02-15 20:35:48.406240] Learning Result: Successfully added ID 21164 to SISA model.
+[2026-02-15 20:39:30.181615] Learning Strategy: Incremental update for DL
+[2026-02-15 20:39:33.775276] DL Incremental Learning: Added ID 21165 (Fine-tuned 5 epochs)
+[2026-02-15 20:39:33.779285] Learning Result: Successfully learned ID 21165 (Fine-tuned).
+[2026-02-15 20:40:08.472963] Learning Strategy: Incremental update for SISA
+[2026-02-15 20:40:08.882103] SISA Incremental Learning: Added ID 21166
+[2026-02-15 20:40:08.886414] Learning Result: Successfully added ID 21166 to SISA model.
+[2026-03-25 21:20:42.203949] Training completed
+[2026-03-25 21:20:42.319791] Strategy selected: DL (Repeat/Specific: True)
+[2026-03-25 21:20:42.521932] Loaded existing model.
+[2026-03-25 21:20:42.724327] Validation Accuracy: 0.8460161145926589
+[2026-03-25 21:20:43.178011] Adversarial Robustness Score: 0.6115
+[2026-03-25 21:20:43.427251] Compliance Status: True
+[2026-03-25 21:26:31.024218] Training completed
+[2026-03-25 21:26:31.114644] Strategy selected: DL (Repeat/Specific: True)
+[2026-03-25 21:26:31.312967] Loaded existing model.
+[2026-03-25 21:26:31.467966] Validation Accuracy: 0.8460161145926589
+[2026-03-25 21:26:31.750997] Adversarial Robustness Score: 0.6115
+[2026-03-25 21:26:31.965955] Compliance Status: True
+[2026-03-25 21:26:36.325266] Notification: Email Sent Successfully
+[2026-03-25 21:29:40.883987] Training completed
+[2026-03-25 21:29:41.119890] Strategy selected: DL (Repeat/Specific: True)
+[2026-03-25 21:29:41.459990] Loaded existing model.
+[2026-03-25 21:29:41.586700] Validation Accuracy: 0.8460161145926589
+[2026-03-25 21:29:42.055758] Adversarial Robustness Score: 0.6115
+[2026-03-25 21:29:42.468354] Compliance Status: True
+[2026-03-25 21:29:46.754816] Notification: Email Sent Successfully
+[2026-03-26 11:03:42.570973] Training completed
+[2026-03-26 11:03:42.699495] Strategy selected: DL (Repeat/Specific: True)
+[2026-03-26 11:03:45.216805] Unlearning completed. Removed 1 records.
+[2026-03-26 11:03:45.471693] Validation Accuracy: 0.855863921217547
+[2026-03-26 11:03:45.969378] Adversarial Robustness Score: 0.6115
+[2026-03-26 11:03:58.132276] Compliance Status: True
+[2026-03-26 11:04:03.111807] Notification: Email Sent Successfully
+[2026-03-26 11:08:53.936322] Training completed
+[2026-03-26 11:08:54.009872] Strategy selected: DL (Repeat/Specific: True)
+[2026-03-26 11:08:54.117543] Loaded existing model.
+[2026-03-26 11:08:54.217551] Validation Accuracy: 0.855863921217547
+[2026-03-26 11:08:54.387691] Adversarial Robustness Score: 0.6146
+[2026-03-26 11:08:56.592373] Compliance Status: True
+[2026-03-26 11:09:01.244146] Notification: Email Sent Successfully
